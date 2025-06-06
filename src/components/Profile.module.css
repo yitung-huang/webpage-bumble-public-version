@@ -1,0 +1,123 @@
+.profilePhoto {
+    height: var(--card-height);
+    object-fit: cover;
+    object-position: 45% center;
+}
+
+.profilePictureWrapper {
+    position: relative;
+}
+
+.personalInfo {
+    position: absolute;
+    color: var(--color-text-light);
+    left: 28px;
+    bottom: 40px;
+}
+
+.name {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: var(--font-size--title);
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+}
+
+.verificationIcon {
+    color: #40b9fb;
+}
+
+.work,
+.education {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size--subtitle);
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+.mainProfileIcon {
+    margin-right: 4px;
+}
+
+.basicInfoList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    color: var(--color-text-dark);
+    padding-inline-start: 0;
+}
+
+.basicInfoListItem {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background-color: var(--color-background--pills);
+}
+
+.basicInfoIcon {
+    display: flex;
+    margin-right: 6px;
+}
+
+.basicInfoText {
+    font-weight: 500;
+    font-size: var(--font-size--subtext);
+}
+
+.section {
+    background-color: var(--color-background--light);
+    padding: 48px 24px 52px;
+}
+
+.section.introductionSection {
+    padding: 24px;
+}
+
+.sectionTitle,
+.prompt {
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.sectionTitle {
+    display: flex;
+    gap: 4px;
+    font-size: var(--font-size--subheading);
+    margin-bottom: 0.5em;
+}
+
+.prompt {
+    font-size: var(--font-size--prompt);
+    margin-bottom: 1em;
+}
+
+.text,
+.promptAnswer {
+    font-weight: 700;
+    font-size: var(--font-size--text);
+    color: var(--color-text-dark);
+    line-height: 1.3;
+}
+
+.aboutMe {
+    margin-top: 20px;
+}
+
+.photo {
+    display: block;
+    object-fit: contain;
+    height: auto;
+}
+
+.verse {
+    display: block;
+    line-height: 1.3;
+}
+
+.endOfVerse {
+    margin-bottom: 0.8rem;
+}

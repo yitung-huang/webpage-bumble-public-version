@@ -1,0 +1,112 @@
+.matchedScreen {
+    --animation-speed: 400ms ease-in-out;
+
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: opacity var(--animation-speed);
+    color: var(--color-text-light);
+}
+
+.matchedScreen.hidden {
+    opacity: 0;
+}
+
+.matchedScreen.active {
+    opacity: 1;
+    background-color: var(--color-primary);
+}
+
+.checkIcon {
+    --icon-size: 185px;
+
+    position: absolute;
+    display: block;
+    font-size: var(--icon-size);
+    margin: 0 auto;
+    transition: top var(--animation-speed), opacity 1200ms ease-in-out 400ms,
+        left var(--animation-speed) 1000ms;
+    z-index: 2;
+}
+
+.checkIcon.hidden {
+    top: calc(var(--icon-size) * -1);
+    left: 50%;
+    opacity: 1;
+}
+
+.checkIcon.active {
+    top: calc(50% + 10px);
+    left: 30%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.hashtag {
+    font-size: 2rem;
+}
+
+.paragraph {
+    font-size: 2.4rem;
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.title,
+.hashtag,
+.paragraph {
+    opacity: 0;
+    transform: opacity var(--animation-speed) 1000ms;
+}
+
+.title.active,
+.hashtag.active,
+.paragraph.active {
+    opacity: 1;
+}
+
+.imageWrapper {
+    position: relative;
+    height: 150px;
+    width: 280px;
+    margin: 36px auto 48px;
+}
+
+.profile {
+    --profile-photo-size: 150px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    width: var(--profile-photo-size);
+    height: var(--profile-photo-size);
+    opacity: 0;
+    border: 6px solid white;
+    transition: left var(--animation-speed) 1000ms,
+        opacity var(--animation-speed) 800ms;
+}
+
+.profile.active {
+    opacity: 1;
+}
+
+.profile.myPartner.active {
+    left: 30%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.profile.me.active {
+    left: 70%;
+}

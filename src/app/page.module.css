@@ -1,0 +1,29 @@
+.page {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    background-color: var(--color-background);
+}
+
+.main {
+    padding: 0 var(--side-padding);
+}
+
+.swiper {
+    --header-height: 78px;
+    --bottom-padding: 80px;
+    --card-height: calc(100vh - var(--header-height) - var(--bottom-padding));
+
+    height: var(--card-height);
+    border-radius: 24px;
+}
+
+.profileCard {
+    overflow-y: auto;
+}
